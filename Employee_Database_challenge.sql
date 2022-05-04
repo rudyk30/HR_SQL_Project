@@ -49,3 +49,21 @@ LEFT JOIN dept_emp as de
 ON ce.emp_no = de.emp_no
 GROUP BY de.dept_no
 ORDER BY de.dept_no;
+
+--Delieverable 2
+SELECT DISTINCT ON(e.emp_no) e.emp_no,
+	   e.first_name,
+	   e.last_name,
+	   e.birth_date,
+	   de.from_date,
+	   de.to_date,
+	   ti.title
+INTO mentorship_eligibility 
+FROM employees as e
+INNER JOIN dept_emp as de
+ON (e.emp_no=de.emp_no)
+INNER JOIN titles as ti
+ON (e.emp_no=ti.emp_no)
+WHERE de.to_date = '9999-01-01'
+AND (e.birth_date BETWEEN '1-01-1965' AND '12-31-1965')
+ORDER BY e.emp_no;
