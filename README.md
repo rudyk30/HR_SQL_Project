@@ -12,6 +12,10 @@ After completing both pieces of the analysis below are 4 major takeaways garnere
 
 <img width="489" alt="Screen Shot 2022-05-03 at 10 33 53 PM" src="https://user-images.githubusercontent.com/101602688/166619861-0822c018-99bf-45ab-b763-25779a73eddb.png">
 
+* Below is a brief breakdown of the employees eligible for the mentorship program
+
+<img width="812" alt="Screen Shot 2022-05-03 at 10 44 02 PM" src="https://user-images.githubusercontent.com/101602688/166620457-9ef47fef-aff2-4284-a22f-8ee8bcdad8fb.png">
+
 
 * From the data, we can see Senior Engineer's and Senior Staff are job titles seeing the largest amount of retirements. 
 
