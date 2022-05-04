@@ -38,17 +38,17 @@ Two additional queries that can be written to dig deeper into the "silver tsuman
 
 * A Total_Employees query will be helpful as we can then calculate the percentage of the overall workforce that is retiring. Using a LEFT JOIN as we are not looking for matching values between the titles and employees table. Below is what the query will look like: 
 
-  SELECT DISTINCT ON (employees.emp_no) employees.emp_no,
+*  SELECT DISTINCT ON (employees.emp_no) employees.emp_no,
   
-    employees.first_name,
+   employees.first_name,
    
-    employees.last_name,
+   employees.last_name,
     
-    titles.title,
+   titles.title,
     
-    titles.from_date,
+   titles.from_date,
     
-    titles.to_date
+   titles.to_date
 
   INTO Total_Employees
 
@@ -64,13 +64,13 @@ Two additional queries that can be written to dig deeper into the "silver tsuman
 
 * Another query that will be helpful is to understand the salaries of the employees eligible to retire. That way, we can analyze if our highest paid employees are leaving. The query will look like this:
 
-  SELECT ri.emp_no, ri.first_name, ri.last_name, 
+* SELECT ri.emp_no, ri.first_name, ri.last_name, 
 
-  sa.emp_no,
+   sa.emp_no,
 
-  sa.salary
+   sa.salary
 
-  FROM retirement_titles as ri
+   FROM retirement_titles as ri
 
   LEFT JOIN salaries as sa
 
